@@ -2,6 +2,8 @@ var navlink = document.querySelectorAll('.navlink');
 
 navlink.forEach(link => {
     document.getElementById('dashboard').style.display = 'block';
+    document.getElementById('addstock').style.display = 'none';
+    document.getElementById('editstock').style.display = 'none';
     link.addEventListener('click', () => {
         var page = link.dataset.page;
         // console.log(page);
