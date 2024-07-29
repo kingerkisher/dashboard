@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="icon" type="images/x-icon" href="./rsz_1rsz_1.png"/>
+    <link rel="icon" type="images/x-icon" href="./rsz_1rsz_1.png" />
     <title>ScentsAvenue | Dash</title>
 </head>
 
@@ -18,11 +18,11 @@
             <div class="text-center sidebar col-2 p-3">
                 <div class="">
                     <a class="sitelogo" href="../index.html" alt="site icon"><img
-                            src="./ScentsAvenue - The Logo_page-0005vv.png" alt="site logo" class="logo"
+                            src="../image/ScentsAvenue - The Logo_page-0005vv.png" alt="site logo" class="logo"
                             style="height: 60px; width:130px; ">
                     </a>
 
-                    <a class="mobilelogo" href="../index.html" alt="site icon"><img src="./mobilelogo.png"
+                    <a class="mobilelogo" href="../index.html" alt="site icon"><img src="../image/mobilelogo.png"
                             alt="site logo" class="logo" style="height: 50px; width:60px; ">
                     </a>
                 </div>
@@ -153,7 +153,8 @@
                                                 <lord-icon src="https://cdn.lordicon.com/nqisoomz.json" trigger="loop"
                                                     delay="1000" state="loop-flying" style="width:50px;height:50px">
                                                 </lord-icon>
-                                                <span class="lap position-absolute top-1 badge bg-success text-black rounded-circle ">0</span>
+                                                <span
+                                                    class="lap position-absolute top-1 badge bg-success text-black rounded-circle ">0</span>
                                             </div>
                                         </a>
                                         <a class="nav-link" href="#"></a>
@@ -230,30 +231,39 @@
 
                         </div>
                     </div>
-                    <div class="col- info shadow my-3" id="addstock">
-                        <div class="card mt-4 mb-4">
-                            <div class="card-header">
-                                <h3 class="text-center">Add New Stock</h3>
-                            </div>
-                            <div class="card-body">
-                                <form action="#" class="mt-3">
-                                    <div class="row d-flex g-3 mb-2">
-                                        <div class="input-group  mb-2">
-                                            <span class="input-group-text">Brand</span>
-                                            <input type="text" class="form-control" required>
+
+                    <div class="col- info shadow my-3" id="addnew">
+                        <div class="justify-content-center d-flex">
+                            <div class="card col-md-12 col-lg-7 mt-4 mb-4">
+                                <div class="card-header">
+                                    <h3 class="text-center">Add New Stock</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="mt-3">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group  mb-2">
+                                                    <span class="input-group-text">Brand</span>
+                                                    <input type="text" class="form-control form-control-sm" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class=" input-group mb-2">
+                                                    <span class="input-group-text">Perfume</span>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                            </div>
                                         </div>
+
+
                                         <div class=" input-group mb-2">
-                                            <span class="input-group-text">Perfume Name</span>
-                                            <input type="text" class="form-control" required>
-                                        </div>
-                                        <div class=" input-group mb-2">
-                                            <span class="input-group-text">Pefume image</span>
+                                            <span class="input-group-text">Photo</span>
                                             <input type="file" class="form-control" required>
                                         </div>
                                         <div class="row d-flex justify-content-center g-2 mb-2">
                                             <div class=" col-md-6">
                                                 <div class="input-group ">
-                                                    <span class="input-group-text">Perfume size</span>
+                                                    <span class="input-group-text">Size</span>
                                                     <input type="number" class="form-control" required>
                                                 </div>
                                             </div>
@@ -284,38 +294,48 @@
                                                 <label for="floatingTextarea2">Description</label>
                                             </div>
                                         </div>
-                                        <div class="text-center">
+                                        <div class="text-center mt-2">
                                             <button class="btn btn-success" type="submit">Post item</button>
                                         </div>
-                                    </div>
-                                </form>
+
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col- info shadow my-3" id="editstock">
-                        <div class="card mt-4 mb-4">
-                            <div class="card-header">
-                                <h3 class="text-center">Edit-item</h3>
-                            </div>
-                            <div class="card-body">
-                                <form action="#" class="mt-3">
-                                    <div class="row d-flex g-3 mb-2">
-                                        <div class="input-group  mb-2">
-                                            <span class="input-group-text">Brand</span>
-                                            <input type="text" class="form-control" required>
+                        <div class="justify-content-center d-flex">
+                            <div class="card col-md-12 col-lg-7 mt-4 mb-4">
+                                <div class="card-header">
+                                    <h3 class="text-center">Edit Stock</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" class="mt-3">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group  mb-2">
+                                                    <span class="input-group-text">Brand</span>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class=" input-group mb-2">
+                                                    <span class="input-group-text">Perfume</span>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                            </div>
                                         </div>
+
+
                                         <div class=" input-group mb-2">
-                                            <span class="input-group-text">Perfume Name</span>
-                                            <input type="text" class="form-control" required>
-                                        </div>
-                                        <div class=" input-group mb-2">
-                                            <span class="input-group-text">Pefume image</span>
+                                            <span class="input-group-text">Photo</span>
                                             <input type="file" class="form-control" required>
                                         </div>
                                         <div class="row d-flex justify-content-center g-2 mb-2">
                                             <div class=" col-md-6">
                                                 <div class="input-group ">
-                                                    <span class="input-group-text">Perfume size</span>
+                                                    <span class="input-group-text">Size</span>
                                                     <input type="number" class="form-control" required>
                                                 </div>
                                             </div>
@@ -346,11 +366,12 @@
                                                 <label for="floatingTextarea2">Description</label>
                                             </div>
                                         </div>
-                                        <div class="text-center">
+                                        <div class="text-center mt-2">
                                             <button class="btn btn-success" type="submit">Post item</button>
                                         </div>
-                                    </div>
-                                </form>
+
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -359,9 +380,7 @@
             </main>
         </div>
     </section>
-    <footer class="bg-dark text-center">
-        <p>©️ freeman</p>
-    </footer>
+
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
